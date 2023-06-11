@@ -1,6 +1,7 @@
 import { randomUUID } from 'crypto';
 import { Content } from './content';
 import { Notification } from './notification';
+import { describe, it, expect } from 'vitest';
 
 describe('Notification', () => {
   it('should be able to create a notification', () => {

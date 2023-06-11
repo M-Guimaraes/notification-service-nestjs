@@ -2,6 +2,7 @@ import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-no
 import { UnreadNotification } from './unread-notification';
 import { NotificationNotFound } from './errors/notifications-not-found';
 import { makeNotification } from '@test/factories/notification-factory';
+import { describe, it, beforeEach, expect } from 'vitest';
 
 let notificationsRepository: InMemoryNotificationsRepository;
 let sut: UnreadNotification;

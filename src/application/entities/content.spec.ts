@@ -1,4 +1,5 @@
 import { Content } from './content';
+import { describe, it, expect } from 'vitest';
 
 describe('Notification content', () => {
   it('should be able to create a notification content', () => {
