@@ -1,10 +1,6 @@
 export class Content {
   private readonly content: string;
 
-  get value(): string {
-    return this.content;
-  }
-
   constructor(content: string) {
     const isContentLengthValid = this.validateContentLength(content);
 
@@ -13,6 +9,10 @@ export class Content {
     }
 
     this.content = content;
+  }
+
+  get value(): string {
+    return this.content;
   }
 
   private validateContentLength(content: string): boolean {
