@@ -7,9 +7,6 @@ export default defineConfig({
     include: ['**/*.e2e-spec.ts', './src/**/*.spec.ts'],
     globals: true,
     root: './',
-    alias: {
-      '@/': new URL('./src/', import.meta.url).pathname,
-    },
   },
   plugins: [swc.vite(), tsconfigPaths()],
 });
